@@ -87,7 +87,6 @@
 	online_slowdown = 3
 	offline_slowdown = 4
 	max_pressure_protection = FIRESUIT_MAX_PRESSURE
-	min_pressure_protection = 0
 
 /obj/item/rig/merc/heavy/empty
 	initial_modules = list(
