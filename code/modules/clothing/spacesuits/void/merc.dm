@@ -20,6 +20,11 @@
 		SPECIES_UNATHI = 'icons/mob/species/unathi/onmob_head_helmet_unathi.dmi',
 		SPECIES_VOX = 'icons/mob/species/vox/onmob_head_vox.dmi'
 		)
+	sprite_sheets_obj = list(
+		SPECIES_UNATHI = 'icons/obj/clothing/species/unathi/obj_head_unathi.dmi',
+		SPECIES_SKRELL = 'icons/obj/clothing/species/skrell/obj_head_skrell.dmi',
+		SPECIES_VOX = 'icons/obj/clothing/species/vox/obj_head_vox.dmi'
+		)
 	camera = /obj/machinery/camera/network/mercenary
 	light_overlay = "helmet_light_explorer"
 
@@ -47,6 +52,11 @@
 	sprite_sheets = list(
 		SPECIES_UNATHI = 'icons/mob/species/unathi/generated/onmob_suit_unathi.dmi',
 		SPECIES_VOX = 'icons/mob/species/vox/onmob_suit_vox.dmi'
+		)
+	sprite_sheets_obj = list(
+		SPECIES_UNATHI = 'icons/obj/clothing/species/unathi/obj_suit_unathi.dmi',
+		SPECIES_SKRELL = 'icons/obj/clothing/species/skrell/obj_suit_skrell.dmi',
+		SPECIES_VOX = 'icons/obj/clothing/species/vox/obj_suit_vox.dmi'
 		)
 
 /obj/item/clothing/suit/space/void/merc/New()
