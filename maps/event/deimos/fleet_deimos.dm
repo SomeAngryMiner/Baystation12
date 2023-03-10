@@ -34,8 +34,7 @@
 		"nav_fleet_deimos_deck3bow",
 		"nav_fleet_deimos_deck3stern",
 		"nav_fleet_deimos_deck4bow",
-		"nav_fleet_deimos_deck4stern",
-		"nav_fleet_deimos_offship"
+		"nav_fleet_deimos_deck4stern"
 	)
 
 /area/map_template/fleet_deimos

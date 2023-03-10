@@ -1096,9 +1096,6 @@
 "pV" = (
 /obj/machinery/computer/power_monitor,
 /obj/effect/floor_decal/industrial/outline/yellow,
-/obj/structure/cable{
-	icon_state = "0-2"
-	},
 /obj/machinery/light/spot{
 	dir = 1
 	},
@@ -1553,7 +1550,7 @@
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/machinery/door/airlock/external/bolted/cycling{
 	name = "internal airlock";
-	id_tag = "deimos_shuttle_east_inner"
+	id_tag = "deimos_shuttle_west_inner"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 8
@@ -1566,6 +1563,19 @@
 /obj/structure/sign/warning/caution,
 /turf/simulated/wall/r_titanium,
 /area/map_template/fleet_deimos/reactor)
+"xV" = (
+/obj/machinery/embedded_controller/radio/airlock/docking_port{
+	cycle_to_external_air = 1;
+	frequency = 1331;
+	id_tag = "deimos_shuttle_east";
+	pixel_y = 24;
+	req_access = list("ACCESS_TORCH_CREW")
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/map_template/fleet_deimos/crew)
 "xY" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/blast/shutters/open{
@@ -1765,10 +1775,9 @@
 /obj/machinery/embedded_controller/radio/airlock/docking_port{
 	cycle_to_external_air = 1;
 	frequency = 1331;
-	id_tag = "deimos_shuttle_east";
+	id_tag = "deimos_shuttle_west";
 	pixel_y = 24;
-	req_access = list("ACCESS_TORCH_CREW");
-	tag_exterior_sensor = "charon_shuttle_sensor_external"
+	req_access = list("ACCESS_TORCH_CREW")
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 1
@@ -2200,6 +2209,22 @@
 	},
 /turf/simulated/floor/plating,
 /area/map_template/fleet_deimos/bridge)
+"GS" = (
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/machinery/door/airlock/external/bolted/cycling{
+	id_tag = "deimos_shuttle_west_outer";
+	name = "external airlock"
+	},
+/obj/machinery/door/blast/regular/open{
+	density = 0;
+	dir = 4;
+	icon_state = "pdoor0";
+	id_tag = "deimos_shutters";
+	name = "Protective Shutters";
+	opacity = 0
+	},
+/turf/simulated/floor/tiled/dark/monotile,
+/area/map_template/fleet_deimos/crew)
 "GZ" = (
 /obj/effect/floor_decal/icarus_scglogo{
 	icon_state = "top-center";
@@ -2677,6 +2702,11 @@
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/map_template/fleet_deimos/leftengi)
+"Nm" = (
+/obj/effect/overmap/visitable/sector/fleet_deimos_spawn,
+/obj/effect/landmark/map_data,
+/turf/space,
+/area/space)
 "Ns" = (
 /obj/machinery/optable,
 /obj/item/device/radio/intercom{
@@ -3119,9 +3149,6 @@
 	},
 /obj/structure/cable{
 	icon_state = "2-4"
-	},
-/obj/structure/cable{
-	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
 	dir = 1
@@ -7489,7 +7516,7 @@ aR
 HG
 HG
 pw
-Kn
+GS
 kE
 HG
 HG
@@ -8431,7 +8458,7 @@ RZ
 vk
 pY
 GO
-wS
+Nm
 wS
 wS
 wS
@@ -9119,7 +9146,7 @@ qf
 Fx
 Tr
 HG
-AX
+xV
 cm
 Iq
 KN
