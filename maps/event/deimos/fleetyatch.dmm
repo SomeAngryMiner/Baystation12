@@ -552,7 +552,8 @@
 	},
 /obj/machinery/door/blast/shutters/open{
 	id_tag = "deimos-hall";
-	identifier = "deimos-hall"
+	identifier = "deimos-hall";
+	dir = 4
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/map_template/fleet_deimos/central)
@@ -672,7 +673,8 @@
 	},
 /obj/machinery/door/blast/shutters/open{
 	id_tag = "deimos-hall";
-	identifier = "deimos-hall"
+	identifier = "deimos-hall";
+	dir = 4
 	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/map_template/fleet_deimos/central)
@@ -1404,14 +1406,17 @@
 /area/map_template/fleet_deimos/hospital)
 "vH" = (
 /obj/machinery/door/firedoor,
-/obj/machinery/door/airlock/multi_tile/glass/security,
+/obj/machinery/door/airlock/multi_tile/glass/security{
+	dir = 8
+	},
 /obj/machinery/door/blast/shutters/open{
 	id_tag = "deimos-comms";
 	identifier = "deimos-comms"
 	},
 /obj/machinery/door/blast/shutters/open{
 	id_tag = "deimos-hall";
-	identifier = "deimos-hall"
+	identifier = "deimos-hall";
+	dir = 4
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/map_template/fleet_deimos/central)
@@ -2546,6 +2551,11 @@
 /obj/effect/floor_decal/corner/yellow,
 /turf/simulated/floor/tiled/dark,
 /area/map_template/fleet_deimos/reactor)
+"Lm" = (
+/obj/effect/overmap/visitable/sector/fleet_deimos_spawn,
+/obj/effect/landmark/map_data,
+/turf/space,
+/area/space)
 "Ls" = (
 /obj/effect/paint/hull,
 /obj/structure/sign/emergonly,
@@ -3099,14 +3109,17 @@
 /area/map_template/fleet_deimos/leftengi)
 "Tx" = (
 /obj/machinery/door/firedoor,
-/obj/machinery/door/airlock/multi_tile/glass/medical,
+/obj/machinery/door/airlock/multi_tile/glass/medical{
+	dir = 8
+	},
 /obj/machinery/door/blast/shutters/open{
 	id_tag = "deimos-comms";
 	identifier = "deimos-comms"
 	},
 /obj/machinery/door/blast/shutters/open{
 	id_tag = "deimos-hall";
-	identifier = "deimos-hall"
+	identifier = "deimos-hall";
+	dir = 4
 	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/map_template/fleet_deimos/central)
@@ -8398,7 +8411,7 @@ wS
 wS
 dD
 wS
-wS
+Lm
 dD
 xT
 pV

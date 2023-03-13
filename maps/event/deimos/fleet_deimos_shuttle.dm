@@ -1,22 +1,6 @@
 /datum/shuttle/autodock/overmap/fleet_deimos
 	name = "SFV Deimos"
 	warmup_time = 5
-	shuttle_area = list(/area/map_template/fleet_deimos,
-	/area/map_template/fleet_deimos/bridge,
-	/area/map_template/fleet_deimos/hospital,
-	/area/map_template/fleet_deimos/central,
-	/area/map_template/fleet_deimos/comms,
-	/area/map_template/fleet_deimos/crew,
-	/area/map_template/fleet_deimos/reactor,
-	/area/map_template/fleet_deimos/leftstorage,
-	/area/map_template/fleet_deimos/rightstorage,
-	/area/map_template/fleet_deimos/leftgun,
-	/area/map_template/fleet_deimos/rightgun,
-	/area/map_template/fleet_deimos/leftengi,
-	/area/map_template/fleet_deimos/rightengi,
-	/area/map_template/fleet_deimos/leftthrust,
-	/area/map_template/fleet_deimos/rightthrust
-	)
 	current_location = "nav_fleet_deimos_offship"
 	dock_target = "fleet_deimos_shuttle"
 	range = 1
@@ -25,6 +9,10 @@
 	flags = SHUTTLE_FLAGS_PROCESS
 	defer_initialisation = TRUE
 	knockdown = FALSE
+
+/datum/shuttle/autodock/overmap/fleet_deimos/New(_name, obj/effect/shuttle_landmark/initial_location)
+	shuttle_area = subtypesof(/area/map_template/fleet_deimos)
+	..()
 
 /turf/simulated/floor/shuttle_ceiling/fleet
 	color = COLOR_SOL
