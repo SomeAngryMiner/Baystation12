@@ -17,6 +17,7 @@
 		var/newlevel = 	round(charging.percent() * 4.0 / 99)
 		if(chargelevel != newlevel)
 			overlays.Cut()
+			overlays += emissive_appearance(icon, "ccharger-o[newlevel]")
 			overlays += "ccharger-o[newlevel]"
 			chargelevel = newlevel
 	else

@@ -225,6 +225,9 @@
 	icon_state = "pod[on]"
 	var/image/I
 
+	if(panel_open)
+		overlays += "pod_panel"
+
 	I = image(icon, "pod[on]_top")
 	I.pixel_z = 32
 	overlays += I

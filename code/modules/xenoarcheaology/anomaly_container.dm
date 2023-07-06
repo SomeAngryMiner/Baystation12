@@ -220,10 +220,11 @@
 /obj/machinery/anomaly_container/on_update_icon()
 	overlays.Cut()
 	if(health_dead)
-		icon_state = "anomaly_container_broken"
+		icon_state = "[icon_state]_broken"
 	if(attached_paper)
-		overlays += "anomaly_container_paper"
+		overlays += "[icon_state]_paper"
 	if(panel_open)
-		overlays += "anomaly_container_panel"
+		overlays += "[icon_state]_panel"
 	if(is_powered())
-		overlays += "anomaly_container_power"
+		overlays += emissive_appearance(icon, "[icon_state]_lights")
+		overlays += "[icon_state]_lights"

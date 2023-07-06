@@ -71,10 +71,10 @@
 			to_chat(user, SPAN_WARNING("Its control locks have been fried."))
 
 /obj/machinery/power/emitter/on_update_icon()
+	overlays.Cut()
 	if (active && powernet && avail(active_power_usage))
-		icon_state = "emitter_+a"
-	else
-		icon_state = "emitter"
+		overlays += emissive_appearance(icon, "[icon_state]_lights")
+		overlays += "[icon_state]_lights"
 
 /obj/machinery/power/emitter/interface_interact(mob/user)
 	if (!CanInteract(user, DefaultTopicState()))

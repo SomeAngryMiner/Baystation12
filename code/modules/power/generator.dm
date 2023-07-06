@@ -71,15 +71,20 @@
 		return 1
 	else
 		if (lastgenlev != 0)
-			overlays += image('icons/obj/power.dmi', "teg-op[lastgenlev]")
+			overlays += emissive_appearance(icon, "teg-op[lastgenlev]")
+			overlays += image(icon, "teg-op[lastgenlev]")
 			if (circ1 && circ2)
 				var/extreme = (lastgenlev > 9) ? "ex" : ""
 				if (circ1.last_temperature < circ2.last_temperature)
+					overlays += emissive_appearance(icon, "circ-[extreme]cold")
 					circ1.temperature_overlay = "circ-[extreme]cold"
+					overlays += emissive_appearance(icon, "circ-[extreme]hot")
 					circ2.temperature_overlay = "circ-[extreme]hot"
 				else
-					circ1.temperature_overlay = "circ-[extreme]hot"
-					circ2.temperature_overlay = "circ-[extreme]cold"
+					overlays += emissive_appearance(icon, "circ-[extreme]cold")
+					circ1.temperature_overlay = "circ-[extreme]cold"
+					overlays += emissive_appearance(icon, "circ-[extreme]hot")
+					circ2.temperature_overlay = "circ-[extreme]hot"
 		return 1
 
 /obj/machinery/power/generator/Process()
