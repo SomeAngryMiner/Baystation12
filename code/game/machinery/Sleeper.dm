@@ -79,6 +79,9 @@
 			to_chat(occupant, SPAN_NOTICE(SPAN_BOLD("... [pick("comfy", "feels slow", "warm")] ...")))
 
 /obj/machinery/sleeper/on_update_icon()
+	overlays.Cut()
+	if(panel_open)
+		overlays += "[icon_state]_panel"
 	if(!occupant)
 		icon_state = "sleeper_0"
 	else if(inoperable())
