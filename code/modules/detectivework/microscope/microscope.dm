@@ -142,8 +142,8 @@
 	if(panel_open)
 		overlays += "[icon_state]_panel"
 	if(is_powered())
-		overlays += emissive_appearance(icon, "[icon_state]_lights")
+		overlays += emissive_apperance(icon, "[icon_state]_lights")
 		overlays += "[icon_state]_lights"
 	if(sample)
-		overlays += emissive_appearance(icon, "[icon_state]_lights_working")
+		overlays += emissive_apperance(icon, "[icon_state]_lights_working")
 		overlays += "[icon_state]_lights_working"
