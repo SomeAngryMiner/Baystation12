@@ -4,7 +4,7 @@
 	density = TRUE
 	anchored = TRUE
 	use_power = POWER_USE_IDLE
-	icon = 'icons/obj/kinetic_harvester.dmi'
+	icon = 'icons/obj/machines/kinetic_harvester.dmi'
 	icon_state = "off"
 	var/initial_id_tag
 	var/list/stored =     list()

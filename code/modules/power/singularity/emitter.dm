@@ -3,7 +3,7 @@
 /obj/machinery/power/emitter
 	name = "emitter"
 	desc = "A massive, heavy-duty industrial laser. This design is a fixed installation, capable of shooting in only one direction."
-	icon = 'icons/obj/singularity.dmi'
+	icon = 'icons/obj/machines/power/singularity.dmi'
 	icon_state = "emitter"
 	anchored = FALSE
 	density = TRUE

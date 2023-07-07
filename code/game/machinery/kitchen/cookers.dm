@@ -690,7 +690,7 @@
 /obj/item/material/chopping_board
 	name = "chopping board"
 	desc = "A food preparation surface that allows you to combine food more easily."
-	icon = 'icons/obj/chopping_board.dmi'
+	icon = 'icons/obj/food/chopping_board.dmi'
 	icon_state = "chopping_board"
 	w_class = ITEM_SIZE_NORMAL
 	default_material = MATERIAL_MAPLE

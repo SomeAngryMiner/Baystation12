@@ -5,7 +5,7 @@
 /obj/machinery/vitals_monitor
 	name = "vitals monitor"
 	desc = "A bulky yet mobile machine, showing some odd graphs."
-	icon = 'icons/obj/heartmonitor.dmi'
+	icon = 'icons/obj/machines/heartmonitor.dmi'
 	icon_state = "base"
 	anchored = FALSE
 	power_channel = EQUIP

@@ -137,7 +137,7 @@
 /obj/item/shovel
 	name = "shovel"
 	desc = "A large tool for digging and moving dirt."
-	icon = 'icons/obj/tools.dmi'
+	icon = 'icons/obj/tools/shovels.dmi'
 	icon_state = "shovel"
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
 	slot_flags = SLOT_BELT

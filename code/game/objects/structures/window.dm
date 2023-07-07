@@ -1,7 +1,7 @@
 /obj/structure/window
 	name = "window"
 	desc = "A window."
-	icon = 'icons/obj/window.dmi'
+	icon = 'icons/obj/structure/window.dmi'
 	density = TRUE
 	w_class = ITEM_SIZE_NORMAL
 
@@ -748,7 +748,7 @@
 
 /obj/machinery/button/windowtint
 	name = "window tint control"
-	icon = 'icons/obj/power.dmi'
+	icon = 'icons/obj/structures/buttons.dmi'
 	icon_state = "light0"
 	desc = "A remote control switch for electrochromic windows."
 	var/id

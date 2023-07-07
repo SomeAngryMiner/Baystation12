@@ -1,77 +1,77 @@
 /obj/structure/virology
 	name = "isolator"
 	desc = "A isolator, it appears to be off."
-	icon = 'icons/obj/virology.dmi'
+	icon = 'icons/obj/machines/research/virology.dmi'
 	icon_state = "isolator_off"
 	anchored = TRUE
 
 /obj/structure/virology/iso
 	name = "isolator"
 	desc = "An isolator, the screen has a series of data streams that you can't quite understand."
-	icon = 'icons/obj/virology.dmi'
+	icon = 'icons/obj/machines/research/virology.dmi'
 	icon_state = "isolator"
 	anchored = TRUE
 
 /obj/structure/virology/iso_on
 	name = "isolator"
 	desc = "An isolator, there is a sample inserted and the screen has a series of data streams that you can't quite understand."
-	icon = 'icons/obj/virology.dmi'
+	icon = 'icons/obj/machines/research/virology.dmi'
 	icon_state = "isolator_processing"
 	anchored = TRUE
 
 /obj/structure/virology/iso_sample
 	name = "isolator"
 	desc = "An isolator, there is a sample inserted and the screen has a series of data streams that you can't quite understand."
-	icon = 'icons/obj/virology.dmi'
+	icon = 'icons/obj/machines/research/virology.dmi'
 	icon_state = "isolator_in"
 	anchored = TRUE
 
 /obj/structure/virology/analyser
 	name = "analyser"
 	desc = "An analyser, there is a sample inserted and the screen has a series of data streams that you can't quite understand."
-	icon = 'icons/obj/virology.dmi'
+	icon = 'icons/obj/machines/research/virology.dmi'
 	icon_state = "analyser_processing"
 	anchored = TRUE
 
 /obj/structure/virology/analyser_off
 	name = "analyser"
 	desc = "An analyser, it is currently sitting idle."
-	icon = 'icons/obj/virology.dmi'
+	icon = 'icons/obj/machines/research/virology.dmi'
 	icon_state = "analyser"
 	anchored = TRUE
 
 /obj/structure/virology/incubator_off
 	name = "incubator"
 	desc = "An incubator, it is currently idle."
-	icon = 'icons/obj/virology.dmi'
+	icon = 'icons/obj/machines/research/virology.dmi'
 	icon_state = "incubator"
 	anchored = TRUE
 
 /obj/structure/virology/incubator_on
 	name = "incubator"
 	desc = "An incubator, you can see a set of samples inside."
-	icon = 'icons/obj/virology.dmi'
+	icon = 'icons/obj/machines/research/virology.dmi'
 	icon_state = "incubator_on"
 	anchored = TRUE
 
 /obj/structure/virology/centrifuge
 	name = "centrifuge"
 	desc = "A centrifuge, it is currently idle."
-	icon = 'icons/obj/virology.dmi'
+	icon = 'icons/obj/machines/research/virology.dmi'
 	icon_state = "centrifuge"
 	anchored = TRUE
 
 /obj/structure/virology/centrifuge_on
 	name = "centrifuge"
 	desc = "A centrifuge, it is currently processing a sample."
-	icon = 'icons/obj/virology.dmi'
+	icon = 'icons/obj/machines/research/virology.dmi'
 	icon_state = "centrifuge_moving"
 	anchored = TRUE
 
 /obj/structure/virology/centrifuge_broken
 	name = "centrifuge"
 	desc = "A centrifuge, the glass is smashed open."
-	icon = 'icons/obj/virology.dmi'
+	icon = 'icons/obj/machines/research/virology.dmi'
 	icon_state = "centrifugeb"
 	anchored = TRUE
 

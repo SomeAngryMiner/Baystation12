@@ -1,5 +1,5 @@
 /obj/machinery/mining
-	icon = 'icons/obj/mining_drill.dmi'
+	icon = 'icons/obj/machines/mining/mining_drill.dmi'
 	anchored = FALSE
 	use_power = POWER_USE_OFF //The drill takes power directly from a cell.
 	density = TRUE

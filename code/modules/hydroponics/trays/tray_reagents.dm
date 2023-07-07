@@ -1,6 +1,6 @@
 
 /obj/item/plantspray
-	icon = 'icons/obj/flora/hydroponics_machines.dmi'
+	icon = 'icons/obj/machines/hydroponics_machines.dmi'
 	item_state = "spray"
 	item_flags = ITEM_FLAG_NO_BLUDGEON
 	slot_flags = SLOT_BELT

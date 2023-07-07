@@ -441,7 +441,7 @@
 /obj/machinery/button/crematorium
 	name = "crematorium igniter"
 	desc = "Burn baby burn!"
-	icon = 'icons/obj/power.dmi'
+	icon = 'icons/obj/structures/buttons.dmi'
 	icon_state = "crema_switch"
 	req_access = list(access_crematorium)
 	id_tag = 1

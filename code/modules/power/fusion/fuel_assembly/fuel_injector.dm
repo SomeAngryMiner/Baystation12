@@ -1,6 +1,6 @@
 /obj/machinery/fusion_fuel_injector
 	name = "fuel injector"
-	icon = 'icons/obj/machines/power/fusion.dmi'
+	icon = 'icons/obj/machines/power/fusion_fuel_injectors.dmi'
 	icon_state = "injector0"
 	density = TRUE
 	anchored = FALSE

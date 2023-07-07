@@ -1,7 +1,7 @@
 /obj/machinery/radio_beacon
 	name = "transmission beacon"
 	desc = "A bulky hyperspace transmitter, capable of continuously broadcasting a signal that can be picked up by ship sensors."
-	icon = 'icons/obj/structures/beacon.dmi'
+	icon = 'icons/obj/machines/beacon.dmi'
 	icon_state = "inactive"
 	density = TRUE
 	anchored = TRUE

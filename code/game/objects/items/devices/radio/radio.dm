@@ -891,7 +891,7 @@
 
 /obj/item/device/radio/phone
 	broadcasting = 0
-	icon = 'icons/obj/items.dmi'
+	icon = 'icons/obj/radio.dmi'
 	icon_state = "red_phone"
 	randpixel = 0
 	listening = 1

@@ -3,7 +3,7 @@ var/global/bomb_set
 /obj/machinery/nuclearbomb
 	name = "nuclear fission explosive"
 	desc = "Uh oh. RUN!"
-	icon = 'icons/obj/nuke.dmi'
+	icon = 'icons/obj/machines/nuke.dmi'
 	icon_state = "idle"
 	density = TRUE
 	use_power = POWER_USE_OFF
@@ -447,7 +447,7 @@ var/global/bomb_set
 /obj/machinery/nuclearbomb/station
 	name = "self-destruct terminal"
 	desc = "For when it all gets too much to bear. Do not taunt."
-	icon = 'icons/obj/nuke_station.dmi'
+	icon = 'icons/obj/machines/nuke_station.dmi'
 	anchored = TRUE
 	deployable = 1
 	extended = 1

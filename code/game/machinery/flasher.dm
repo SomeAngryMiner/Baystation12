@@ -3,7 +3,7 @@
 /obj/machinery/flasher
 	name = "mounted flash"
 	desc = "A wall-mounted flashbulb device."
-	icon = 'icons/obj/stationobjs.dmi'
+	icon = 'icons/obj/portable_flash.dmi'
 	icon_state = "mflash1"
 	var/range = 2 //this is roughly the size of brig cell
 	var/disable = 0

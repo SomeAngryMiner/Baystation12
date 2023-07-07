@@ -29,7 +29,7 @@
 /obj/machinery/computer/cryopod/robot
 	name = "robotic storage console"
 	desc = "An interface between crew and the robotic storage systems."
-	icon = 'icons/obj/robot_storage.dmi'
+	icon = 'icons/obj/machines/robot_storage.dmi'
 	icon_state = "console"
 
 	storage_type = "cyborgs"
@@ -180,7 +180,7 @@
 /obj/machinery/cryopod/robot
 	name = "robotic storage unit"
 	desc = "A storage unit for robots."
-	icon = 'icons/obj/robot_storage.dmi'
+	icon = 'icons/obj/machines/robot_storage.dmi'
 	icon_state = "pod_0"
 	base_icon_state = "pod_0"
 	occupied_icon_state = "pod_1"

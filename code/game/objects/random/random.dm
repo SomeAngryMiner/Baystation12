@@ -344,7 +344,7 @@
 /obj/random/ammo
 	name = "Random Ammunition"
 	desc = "This is random ammunition."
-	icon = 'icons/obj/ammo.dmi'
+	icon = 'icons/obj/weapons/ammo.dmi'
 	icon_state = "magnum"
 
 /obj/random/ammo/spawn_choices()
@@ -558,7 +558,7 @@
 /obj/random/material //Random materials for building stuff
 	name = "random material"
 	desc = "This is a random material."
-	icon = 'icons/obj/materials.dmi'
+	icon = 'icons/obj/materials/materials.dmi'
 	icon_state = "sheet"
 
 /obj/random/material/spawn_choices()
@@ -1431,7 +1431,7 @@ var/global/list/multi_point_spawns
 
 /obj/random/single/lighter
 	name = "randomly spawned lighter"
-	icon = 'icons/obj/lighters.dmi'
+	icon = 'icons/obj/tools/lighters.dmi'
 	icon_state = "lighter"
 	spawn_object = /obj/item/flame/lighter
 

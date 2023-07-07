@@ -129,7 +129,7 @@
 /obj/item/rcd_ammo
 	name = "compressed matter cartridge"
 	desc = "A highly-compressed matter cartridge usable in rapid construction (and deconstruction) devices, such as railguns."
-	icon = 'icons/obj/ammo.dmi'
+	icon = 'icons/obj/weapons/ammo.dmi'
 	icon_state = "rcd"
 	item_state = "rcdammo"
 	w_class = ITEM_SIZE_SMALL

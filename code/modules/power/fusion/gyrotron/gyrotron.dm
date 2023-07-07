@@ -2,7 +2,7 @@
 
 /obj/machinery/power/emitter/gyrotron
 	name = "gyrotron"
-	icon = 'icons/obj/machines/power/fusion.dmi'
+	icon = 'icons/obj/machines/power/gyrotron.dmi'
 	desc = "A heavy-duty, highly configurable industrial gyrotron suited for powering fusion reactors."
 	icon_state = "emitter"
 	req_lock_access = list(access_engine)
