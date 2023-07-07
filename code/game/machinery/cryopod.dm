@@ -11,7 +11,7 @@
 /obj/machinery/computer/cryopod
 	name = "cryogenic oversight console"
 	desc = "An interface between crew and the cryogenic storage oversight systems."
-	icon = 'icons/obj/Cryogenic2.dmi'
+	icon = 'icons/obj/machines/medical/bodyscanner.dmi'
 	icon_state = "cellconsole"
 	density = FALSE
 	interact_offline = 1
@@ -135,7 +135,7 @@
 /obj/machinery/cryopod
 	name = "cryogenic freezer"
 	desc = "A man-sized pod for entering suspended animation."
-	icon = 'icons/obj/Cryogenic2.dmi'
+	icon = 'icons/obj/machines/medical/bodyscanner.dmi'
 	icon_state = "body_scanner_0"
 	density = TRUE
 	anchored = TRUE
@@ -577,7 +577,7 @@
 /obj/structure/broken_cryo
 	name = "broken cryo sleeper"
 	desc = "Whoever was inside isn't going to wake up now. It looks like you could pry it open with a crowbar."
-	icon = 'icons/obj/Cryogenic2.dmi'
+	icon = 'icons/obj/machines/medical/bodyscanner.dmi'
 	icon_state = "broken_cryo"
 	anchored = TRUE
 	density = TRUE

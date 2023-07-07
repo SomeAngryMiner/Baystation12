@@ -321,7 +321,7 @@
 	name = "water cooler"
 	desc = "A machine that dispenses cool water to drink."
 	amount_per_transfer_from_this = 5
-	icon = 'icons/obj/vending.dmi'
+	icon = 'icons/obj/machines/vending.dmi'
 	icon_state = "water_cooler"
 	possible_transfer_amounts = null
 	anchored = TRUE

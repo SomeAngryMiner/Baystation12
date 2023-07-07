@@ -148,11 +148,11 @@
 	if(panel_open)
 		overlays += "[icon_state]_panel"
 	if(is_powered())
-		overlays += emissive_apperance(icon, "[icon_state]_screen")
+		overlays += emissive_appearance(icon, "[icon_state]_screen")
 		overlays += "[icon_state]_screen"
 	else if(is_powered() && scanning)
 		overlays += "[icon_state]_working"
-		overlays += emissive_apperance(icon, "[icon_state]_screen_working")
+		overlays += emissive_appearance(icon, "[icon_state]_screen_working")
 		overlays += "[icon_state]_screen_working"
 	else if(closed)
 		overlays += "[icon_state]_closed"

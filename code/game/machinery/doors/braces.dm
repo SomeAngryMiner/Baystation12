@@ -35,7 +35,7 @@
 /obj/item/airlock_brace
 	name = "airlock brace"
 	desc = "A sturdy device that can be attached to an airlock to reinforce it and provide additional security."
-	icon = 'icons/obj/airlock_machines.dmi'
+	icon = 'icons/obj/doors/airlock_machines.dmi'
 	icon_state = "brace_open"
 	health_max = 300
 	var/obj/machinery/door/airlock/airlock

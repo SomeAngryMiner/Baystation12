@@ -202,7 +202,7 @@
 /obj/item/reagent_containers/glass/beaker/bowl
 	name = "mixing bowl"
 	desc = "A large mixing bowl."
-	icon = 'icons/obj/kitchen.dmi'
+	icon = 'icons/obj/machines/kitchen.dmi'
 	icon_state = "mixingbowl"
 	center_of_mass = "x=16;y=10"
 	matter = list(MATERIAL_STEEL = 300)
@@ -324,7 +324,7 @@
 /obj/item/reagent_containers/glass/blender_jug
 	name = "Blender Jug"
 	desc = "A blender jug, part of a blender."
-	icon = 'icons/obj/kitchen.dmi'
+	icon = 'icons/obj/machines/kitchen.dmi'
 	icon_state = "blender_jug_e"
 	volume = 100
 

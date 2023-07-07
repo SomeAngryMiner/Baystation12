@@ -900,7 +900,7 @@ FIRE ALARM
 /obj/machinery/firealarm
 	name = "fire alarm"
 	desc = "<i>\"Pull this in case of emergency\"</i>. Thus, keep pulling it forever."
-	icon = 'icons/obj/firealarm.dmi'
+	icon = 'icons/obj/machines/firealarm.dmi'
 	icon_state = "casing"
 	var/detecting = 1.0
 	var/working = 1.0

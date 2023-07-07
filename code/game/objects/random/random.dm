@@ -707,7 +707,7 @@
 /obj/random/snack
 	name = "random snack"
 	desc = "This is a random snack item."
-	icon = 'icons/obj/food.dmi'
+	icon = 'icons/obj/food/food.dmi'
 	icon_state = "sosjerky"
 
 /obj/random/snack/spawn_choices()
@@ -1285,7 +1285,7 @@ var/global/list/multi_point_spawns
 /obj/random/mre
 	name = "random MRE"
 	desc = "This is a random single MRE."
-	icon = 'icons/obj/food.dmi'
+	icon = 'icons/obj/food/food.dmi'
 	icon_state = "mre"
 
 /obj/random/mre/spawn_choices()
@@ -1413,7 +1413,7 @@ var/global/list/multi_point_spawns
 /obj/random/vendor
 	name = "random vending machine"
 	desc = "This is a randomly selected vending machine."
-	icon = 'icons/obj/vending.dmi'
+	icon = 'icons/obj/machines/vending.dmi'
 	icon_state = "green-outline"
 
 /obj/random/vendor/spawn_choices()

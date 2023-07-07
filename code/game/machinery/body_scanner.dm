@@ -4,7 +4,7 @@
 	var/locked
 	name = "body scanner"
 	desc = "A large full-body scanning machine that provides a complete physical assessment of a patient placed inside. Operated using an adjacent console."
-	icon = 'icons/obj/Cryogenic2.dmi'
+	icon = 'icons/obj/machines/medical/bodyscanner.dmi'
 	icon_state = "body_scanner_0"
 	density = TRUE
 	anchored = TRUE

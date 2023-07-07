@@ -33,10 +33,10 @@
 	if(panel_open)
 		overlays += "[icon_state]_panel"
 	if(is_powered())
-		overlays += emissive_apperance(icon, "[icon_state]_lights")
+		overlays += emissive_appearance(icon, "[icon_state]_lights")
 		overlays += "[icon_state]_lights"
 	else if(printing)
-		overlays += emissive_apperance(icon, "[icon_state]_lights_working")
+		overlays += emissive_appearance(icon, "[icon_state]_lights_working")
 		overlays += "[icon_state]_lights_working"
 
 /obj/machinery/organ_printer/examine(mob/user)

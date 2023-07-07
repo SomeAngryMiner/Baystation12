@@ -54,7 +54,7 @@
 /obj/item/frame/fire_alarm
 	name = "fire alarm frame"
 	desc = "Used for building fire alarms."
-	icon = 'icons/obj/firealarm.dmi'
+	icon = 'icons/obj/machines/firealarm.dmi'
 	icon_state = "casing"
 	build_machine_type = /obj/machinery/firealarm
 

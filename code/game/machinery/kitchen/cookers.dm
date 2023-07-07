@@ -13,7 +13,7 @@
 /obj/machinery/cooker
 	name = "cooker"
 	desc = "You shouldn't be seeing this!"
-	icon = 'icons/obj/cooking_machines.dmi'
+	icon = 'icons/obj/machines/cooking_machines.dmi'
 	density = TRUE
 	anchored = TRUE
 	idle_power_usage = 0
@@ -496,7 +496,7 @@
 		I.color = source.color
 		I.overlays += source.overlays
 		I.SetTransform(scale = 0.5)
-		result.icon = 'icons/obj/food.dmi'
+		result.icon = 'icons/obj/food/food.dmi'
 		result.icon_state = "cereal_box"
 		result.color = null
 		result.overlays += I

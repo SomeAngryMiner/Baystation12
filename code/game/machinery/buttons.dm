@@ -1,6 +1,6 @@
 /obj/machinery/button
 	name = "button"
-	icon = 'icons/obj/objects.dmi'
+	icon = 'icons/obj/structures/buttons.dmi'
 	icon_state = "launcherbtt"
 	desc = "A remote control switch for something."
 	anchored = TRUE

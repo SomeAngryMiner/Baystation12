@@ -1,7 +1,7 @@
 /obj/item/reagent_containers/food/snacks
 	name = "snack"
 	desc = "Yummy!"
-	icon = 'icons/obj/food.dmi'
+	icon = 'icons/obj/food/food.dmi'
 	center_of_mass = "x=16;y=16"
 	var/bitesize = 1
 	var/bitecount = 0
@@ -2746,7 +2746,7 @@
 /obj/item/pizzabox
 	name = "pizza box"
 	desc = "A box suited for pizzas."
-	icon = 'icons/obj/food.dmi'
+	icon = 'icons/obj/food/food.dmi'
 	icon_state = "pizzabox1"
 
 	var/open = 0 // Is the box open?

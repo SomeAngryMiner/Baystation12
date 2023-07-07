@@ -3,8 +3,8 @@
 	var/stored_scan_subject
 	name = "body scanner console"
 	desc = "A small terminal used to operate an adjacent body scanner, view the results of a scan, and send those results to connected medical displays."
-	icon = 'icons/obj/Cryogenic2.dmi'
-	icon_state = "body_scannerconsole"
+	icon = 'icons/obj/machines/medical/bodyscanner.dmi'
+	icon_state = "body_scanner_console"
 	density = FALSE
 	anchored = TRUE
 	construct_state = /singleton/machine_construction/default/panel_closed
@@ -27,7 +27,7 @@
 	if(panel_open)
 		overlays += "[icon_state]_panel"
 	if(is_powered())
-		overlays += emissive_apperance(icon, "[icon_state]_lights")
+		overlays += emissive_appearance(icon, "[icon_state]_lights")
 		overlays += "[icon_state]_lights"
 
 /obj/machinery/body_scanconsole/ex_act(severity)
