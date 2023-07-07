@@ -275,7 +275,7 @@ var/global/solar_gen_rate = 1500
 /obj/machinery/power/solar_control
 	name = "solar panel control"
 	desc = "A controller for solar panel arrays."
-	icon = 'icons/obj/computer.dmi'
+	icon = 'icons/obj/machines/computer.dmi'
 	icon_state = "solar"
 	anchored = TRUE
 	density = TRUE
@@ -366,7 +366,7 @@ var/global/solar_gen_rate = 1500
 	icon_state = "solar"
 	overlays.Cut()
 	if(cdir > -1)
-		overlays += image('icons/obj/computer.dmi', "solcon-o", ABOVE_OBJ_LAYER, angle2dir(cdir))
+		overlays += image('icons/obj/machines/computer.dmi', "solcon-o", ABOVE_OBJ_LAYER, angle2dir(cdir))
 	return
 
 /obj/machinery/power/solar_control/interface_interact(mob/user)

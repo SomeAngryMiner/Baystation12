@@ -78,21 +78,21 @@
 /obj/structure/virology/cryogenics
 	name = "cryotube"
 	desc = "A cryotube, it is not on."
-	icon = 'icons/obj/cryogenics.dmi'
+	icon = 'icons/obj/machines/medical/cryogenics.dmi'
 	icon_state = "cell-off"
-	anchored = TRUE  
+	anchored = TRUE
 
 /obj/structure/virology/cryogenics_occupied
 	name = "occupied cryotube"
 	desc = "A cryotube, a figure floats inside, they do not appear to be conscious."
-	icon = 'icons/obj/cryogenics.dmi'
+	icon = 'icons/obj/machines/medical/cryogenics.dmi'
 	icon_state = "cell-occupied"
 	anchored = TRUE
 
 /obj/structure/virology/cryogenics_on
 	name = "cryotube"
 	desc = "A cryotube, a strange liquid bubbles inside the glass."
-	icon = 'icons/obj/cryogenics.dmi'
+	icon = 'icons/obj/machines/medical/cryogenics.dmi'
 	icon_state = "cell-on"
 	anchored = TRUE
 

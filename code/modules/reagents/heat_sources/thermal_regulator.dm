@@ -125,7 +125,7 @@
 		LAZYADD(adding_overlays, on_icon)
 		if(temperature > MINIMUM_GLOW_TEMPERATURE) // 50C
 			if(!glow_icon)
-				glow_icon = emissive_appearance(icon, "[icon_state]_lights_[heating ? "cold" : "hot"])
+				glow_icon = emissive_appearance(icon, "[icon_state]_lights_[heating ? "cold" : "hot"]")
 				overlays += emissive_apperance(icon, "[icon_state]_lights_cold")
 			glow_icon.alpha = clamp(temperature - MINIMUM_GLOW_TEMPERATURE, MINIMUM_GLOW_VALUE, MAXIMUM_GLOW_VALUE)
 			LAZYADD(adding_overlays, glow_icon)
