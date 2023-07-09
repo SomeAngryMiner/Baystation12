@@ -3015,7 +3015,7 @@
 /obj/item/reagent_containers/food/snacks/customburger
 	name = "custom burger"
 	desc = "A tasty burger."
-	icon = 'icons/obj/food_custom.dmi'
+	icon = 'icons/obj/food/food_custom.dmi'
 	icon_state = "customburger"
 	filling_color = "#b8824c"
 	center_of_mass = "x=16;y=12"

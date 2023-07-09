@@ -431,7 +431,7 @@
 
 /obj/structure/hygiene/sink
 	name = "sink"
-	icon = 'icons/obj/watercloset.dmi'
+	icon = 'icons/obj/sinks.dmi'
 	icon_state = "sink"
 	desc = "A sink used for washing one's hands and face."
 	anchored = TRUE
@@ -599,7 +599,7 @@
 
 /obj/item/taperoll/bog
 	name = "toilet paper roll"
-	icon = 'icons/obj/watercloset.dmi'
+	icon = 'icons/obj/bog.dmi'
 	desc = "A unbranded roll of standard issue two ply toilet paper. Refined from carefully rendered down sea shells due to SolGov's 'Abuse Of The Trees Act'."
 	tape_type = /obj/item/tape/bog
 	icon_state = "bogroll"
@@ -648,12 +648,12 @@
 /obj/item/paper/crumpled/bog
 	name = "sheet of toilet paper"
 	desc = "A single sheet of toilet paper. Two ply."
-	icon = 'icons/obj/watercloset.dmi'
+	icon = 'icons/obj/bog.dmi'
 	icon_state = "bogroll_sheet"
 
 /obj/structure/hygiene/faucet
 	name = "faucet"
-	icon = 'icons/obj/watercloset.dmi'
+	icon = 'icons/obj/faucets.dmi'
 	icon_state = "faucet"
 	desc = "An outlet for liquids. Water you waiting for?"
 	anchored = TRUE
@@ -700,7 +700,7 @@
 /obj/item/faucet
 	name = "faucet"
 	desc = "An outlet for liquids. Water you waiting for?"
-	icon = 'icons/obj/watercloset.dmi'
+	icon = 'icons/obj/faucets.dmi'
 	icon_state = "faucet-item"
 	obj_flags = OBJ_FLAG_ROTATABLE
 	var/constructed_type = /obj/structure/hygiene/faucet

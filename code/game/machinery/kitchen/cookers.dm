@@ -505,12 +505,12 @@
 
 /obj/item/reagent_containers/food/snacks/variable
 	name = "cooked food"
-	icon = 'icons/obj/food_custom.dmi'
+	icon = 'icons/obj/food/food_custom.dmi'
 	bitesize = 2
 
 /obj/item/reagent_containers/food/snacks/sliceable/variable
 	name = "cooked food"
-	icon = 'icons/obj/food_custom.dmi'
+	icon = 'icons/obj/food/food_custom.dmi'
 	slice_path = /obj/item/reagent_containers/food/snacks/slice
 	slices_num = 5
 	bitesize = 2
@@ -518,7 +518,7 @@
 
 /obj/item/reagent_containers/food/snacks/slice/variable
 	name = "cooked food slice"
-	icon = 'icons/obj/food_custom.dmi'
+	icon = 'icons/obj/food/food_custom.dmi'
 	whole_path = /obj/item/reagent_containers/food/snacks/sliceable/variable
 	bitesize = 2
 
@@ -627,7 +627,7 @@
 /obj/item/reagent_containers/food/snacks/donut/variable
 	name = "donut"
 	desc = "Donut eat this!"
-	icon = 'icons/obj/food_custom.dmi'
+	icon = 'icons/obj/food/food_custom.dmi'
 	icon_state = "donut"
 	nutriment_amt = 2
 	nutriment_desc = list("donut" = 2)

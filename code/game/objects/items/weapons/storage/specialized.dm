@@ -1,7 +1,7 @@
 /obj/item/storage/ore
 	name = "mining satchel"
 	desc = "This sturdy bag can be used to store and transport ores."
-	icon = 'icons/obj/mining.dmi'
+	icon = 'icons/obj/mining_satchel.dmi'
 	icon_state = "satchel"
 	slot_flags = SLOT_BELT
 	max_storage_space = 200

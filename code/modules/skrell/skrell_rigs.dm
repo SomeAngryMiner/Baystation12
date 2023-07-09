@@ -215,7 +215,7 @@
 	interface_name = "multitool"
 	interface_desc = "A limited-sentience integrated multitool capable of interfacing with any number of systems."
 	device = /obj/item/device/multitool/skrell
-	icon = 'icons/obj/tools.dmi'
+	icon = 'icons/obj/tools/multitool.dmi'
 	icon_state = "skrell_multitool"
 	usable = FALSE
 	selectable = TRUE
@@ -254,7 +254,7 @@
 	desc = "A complex assembly of self-guiding, modular heads capable of performing most manual tasks."
 	interface_name = "modular clustertool"
 	interface_desc = "A complex assembly of self-guiding, modular heads capable of performing most manual tasks."
-	icon = 'icons/obj/tools.dmi'
+	icon = 'icons/obj/tools/swapper.dmi'
 	icon_state = "clustertool"
 	engage_string = "Select Mode"
 	device = /obj/item/clustertool
@@ -337,5 +337,5 @@
 /obj/item/device/multitool/skrell
 	name = "skrellian multitool"
 	desc = "An extreme sophisticated microcomputer capable of interfacing with practically any system."
-	icon = 'icons/obj/tools.dmi'
+	icon = 'icons/obj/tools/multitool.dmi'
 	icon_state = "skrell_multitool"

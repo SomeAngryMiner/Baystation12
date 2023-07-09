@@ -107,7 +107,7 @@
 /obj/item/storage/belt/utility/crystal
 	name = "crystalline tool harness"
 	desc = "A segmented belt of strange crystalline material."
-	icon = "icons/obj/clothing/obj_belt.dmi"
+	icon = 'icons/obj/clothing/obj_belt.dmi'
 	icon_state = "utilitybelt_crystal"
 	item_state = "utilitybelt_crystal"
 

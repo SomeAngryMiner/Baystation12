@@ -6,7 +6,7 @@
 
 /obj/machinery/power/breakerbox
 	name = "breaker box"
-	icon = 'icons/obj/power.dmi'
+	icon = 'icons/obj/machines/power/breakerbox.dmi'
 	icon_state = "bbox"
 	//directwired = 0
 	density = TRUE

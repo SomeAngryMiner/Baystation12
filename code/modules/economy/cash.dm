@@ -2,7 +2,7 @@
 	name = "0 thalers"
 	desc = "It's worth 0 thalers."
 	gender = PLURAL
-	icon = 'icons/obj/items.dmi'
+	icon = 'icons/obj/money.dmi'
 	icon_state = "spacecash1"
 	opacity = 0
 	density = FALSE

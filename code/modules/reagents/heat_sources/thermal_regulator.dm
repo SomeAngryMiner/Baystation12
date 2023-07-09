@@ -5,7 +5,7 @@
 /obj/machinery/reagent_temperature
 	name = "thermal regulator"
 	desc = "A small electric device used to heat and cool chemicals."
-	icon = 'icons/obj/machines/thermal_regulator.dmi'
+	icon = 'icons/obj/machines/medical/thermal_regulator.dmi'
 	icon_state = "regulator"
 	atom_flags = ATOM_FLAG_CLIMBABLE
 	obj_flags = OBJ_FLAG_CAN_TABLE

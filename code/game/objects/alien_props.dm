@@ -4,7 +4,7 @@
 /obj/item/cell/alien
 	name = "alien device"
 	desc = "It hums with power."
-	icon = 'icons/obj/xenoarchaeology.dmi'
+	icon = 'icons/obj/xenoarchaeology_finds.dmi'
 	icon_state = "unknown1"
 	maxcharge = 5000
 	origin_tech = list(TECH_POWER = 7)

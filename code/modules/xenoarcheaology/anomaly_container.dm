@@ -1,7 +1,7 @@
 /obj/machinery/anomaly_container
 	name = "anomaly container"
 	desc = "A massive, steel container used to transport anomalous materials in a suspended state."
-	icon = 'icons/obj/xenoarchaeology.dmi'
+	icon = 'icons/obj/machines/research/anomaly_cage.dmi'
 	icon_state = "anomaly_container"
 	density = TRUE
 	idle_power_usage = 0
