@@ -154,7 +154,7 @@
 
 /obj/effect/spider/spiderling/post_use_item(obj/item/tool, mob/user, interaction_handled, use_call, click_params)
 	. = ..()
-	if (interaction_handled && !health_dead)
+	if (interaction_handled && !health_dead())
 		disturbed()
 
 
@@ -259,6 +259,9 @@
 					break
 
 		if(amount_grown >= 100)
+			if (GLOB.SPIDER_COUNT >= GLOB.MAX_SPIDER_COUNT)
+				amount_grown = 1
+				return
 			new greater_form(src.loc, src)
 			qdel(src)
 	else if(isorgan(loc))
