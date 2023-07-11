@@ -274,7 +274,7 @@
 /obj/structure/hygiene/shower
 	name = "shower"
 	desc = "The HS-451. Installed in the 2200s by the Hygiene Division."
-	icon = 'icons/obj/watercloset.dmi'
+	icon = 'icons/obj/showers.dmi'
 	icon_state = "shower"
 	density = FALSE
 	anchored = TRUE
@@ -297,7 +297,7 @@
 
 /obj/effect/mist
 	name = "mist"
-	icon = 'icons/obj/watercloset.dmi'
+	icon = 'icons/obj/showers.dmi'
 	icon_state = "mist"
 	layer = MOB_LAYER + 1
 	anchored = TRUE
@@ -353,7 +353,7 @@
 		mymist = null
 
 	if(on)
-		overlays += image('icons/obj/watercloset.dmi', src, "water", MOB_LAYER + 1, dir)
+		overlays += image('icons/obj/showers.dmi', src, "water", MOB_LAYER + 1, dir)
 		if(temperature_settings[watertemp] < T20C)
 			return //no mist for cold water
 		if(!ismist)

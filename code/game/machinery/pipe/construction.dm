@@ -227,7 +227,7 @@ Buildable meters
 /obj/item/machine_chassis/air_sensor
 	name = "gas sensor"
 	desc = "A sensor. It detects gasses."
-	icon = 'icons/obj/stationobjs.dmi'
+	icon = 'icons/obj/structures/airfilter.dmi'
 	icon_state = "gsensor1"
 	w_class = ITEM_SIZE_LARGE
 	build_type = /obj/machinery/air_sensor
