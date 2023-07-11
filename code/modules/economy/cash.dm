@@ -75,7 +75,7 @@
 	var/list/images = src.getMoneyImages()
 
 	for(var/A in images)
-		var/image/banknote = image('icons/obj/items.dmi', A)
+		var/image/banknote = image('icons/obj/money.dmi', A)
 		banknote.SetTransform(
 			rotation = pick(-45, -27.5, 0, 0, 0, 0, 0, 0, 0, 27.5, 45),
 			offset_x = rand(-6, 6),

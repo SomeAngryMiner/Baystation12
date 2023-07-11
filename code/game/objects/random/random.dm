@@ -75,7 +75,7 @@
 /obj/random/tool
 	name = "random tool"
 	desc = "This is a random tool."
-	icon = 'icons/obj/tools.dmi'
+	icon = 'icons/obj/tools/welder.dmi'
 	icon_state = "welder"
 
 /obj/random/tool/spawn_choices()
@@ -91,7 +91,7 @@
 /obj/random/technology_scanner
 	name = "random scanner"
 	desc = "This is a random technology scanner."
-	icon = 'icons/obj/atmos_analyzer.dmi'
+	icon = 'icons/obj/tools/atmos_analyzer.dmi'
 	icon_state = "atmos"
 
 /obj/random/technology_scanner/spawn_choices()
@@ -102,7 +102,7 @@
 /obj/random/powercell
 	name = "random powercell"
 	desc = "This is a random powercell."
-	icon = 'icons/obj/power.dmi'
+	icon = 'icons/obj/powercells.dmi'
 	icon_state = "hcell"
 
 /obj/random/powercell/spawn_choices()
@@ -130,7 +130,7 @@
 /obj/random/toolbox
 	name = "random toolbox"
 	desc = "This is a random toolbox."
-	icon = 'icons/obj/storage.dmi'
+	icon = 'icons/obj/tools/toolboxes.dmi'
 	icon_state = "red"
 
 /obj/random/toolbox/spawn_choices()
@@ -142,7 +142,7 @@
 /obj/random/tech_supply
 	name = "random tech supply"
 	desc = "This is a random piece of technology supplies."
-	icon = 'icons/obj/power.dmi'
+	icon = 'icons/obj/powercells.dmi'
 	icon_state = "cell"
 	spawn_nothing_percentage = 50
 
@@ -164,7 +164,7 @@
 /obj/random/medical
 	name = "Random Medical equipment"
 	desc = "This is a random medical item."
-	icon = 'icons/obj/items.dmi'
+	icon = 'icons/obj/medical.dmi'
 	icon_state = "medrandom"
 
 /obj/random/medical/spawn_choices()
@@ -187,7 +187,7 @@
 /obj/random/medical/lite
 	name = "Random Medicine"
 	desc = "This is a random simple medical item."
-	icon = 'icons/obj/items.dmi'
+	icon = 'icons/obj/medical.dmi'
 	icon_state = "medrandom"
 	spawn_nothing_percentage = 25
 
@@ -231,7 +231,7 @@
 /obj/random/contraband
 	name = "Random Illegal Item"
 	desc = "Hot Stuff."
-	icon = 'icons/obj/items.dmi'
+	icon = 'icons/obj/lavatory.dmi'
 	icon_state = "purplecomb"
 	spawn_nothing_percentage = 50
 
@@ -630,7 +630,7 @@
 /obj/random/assembly
 	name = "random assembly"
 	desc = "This is a random circuit assembly."
-	icon = 'icons/obj/items.dmi'
+	icon = 'icons/obj/assemblies/electronic_assemblies.dmi'
 	icon_state = "gift1"
 
 /obj/random/assembly/spawn_choices()
@@ -642,7 +642,7 @@
 /obj/random/advdevice
 	name = "random advanced device"
 	desc = "This is a random advanced device."
-	icon = 'icons/obj/items.dmi'
+	icon = 'icons/obj/beartrap.dmi'
 	icon_state = "game_kit"
 
 /obj/random/advdevice/spawn_choices()
@@ -737,7 +737,7 @@
 /obj/random/storage
 	name = "random storage item"
 	desc = "This is a storage item."
-	icon = 'icons/obj/storage.dmi'
+	icon = 'icons/obj/boxes.dmi'
 	icon_state = "idOld"
 
 /obj/random/storage/spawn_choices()
@@ -943,7 +943,7 @@ GLOBAL_LIST_INIT(random_backpacks, list(
 /obj/random/backpack
 	name = "random backpack"
 	desc = "This is a random backpack."
-	icon = 'icons/obj/storage.dmi'
+	icon = 'icons/obj/clothing/obj_backpacks.dmi'
 	icon_state = "backpack"
 
 /obj/random/backpack/spawn_choices()
@@ -952,7 +952,7 @@ GLOBAL_LIST_INIT(random_backpacks, list(
 /obj/random/cash
 	name = "random currency"
 	desc = "LOADSAMONEY!"
-	icon = 'icons/obj/items.dmi'
+	icon = 'icons/obj/money.dmi'
 	icon_state = "spacecash1"
 
 /obj/random/cash/spawn_choices()
@@ -979,7 +979,7 @@ GLOBAL_LIST_INIT(random_backpacks, list(
 /obj/random/maintenance //Clutter and loot for maintenance and away missions
 	name = "random maintenance item"
 	desc = "This is a random maintenance item."
-	icon = 'icons/obj/items.dmi'
+	icon = 'icons/obj/gifts.dmi'
 	icon_state = "gift1"
 
 /obj/random/maintenance/spawn_choices()
@@ -993,7 +993,7 @@ Individual items to add to the maintenance list should go here, if you add
 something, make sure it's not in one of the other lists.*/
 	name = "random clean maintenance item"
 	desc = "This is a random clean maintenance item."
-	icon = 'icons/obj/items.dmi'
+	icon = 'icons/obj/gifts.dmi'
 	icon_state = "gift2"
 
 /obj/random/maintenance/clean/spawn_choices()
@@ -1031,7 +1031,7 @@ something, make sure it's not in one of the other lists.*/
 /obj/random/loot /*Better loot for away missions and salvage */
 	name = "random loot"
 	desc = "This is some random loot."
-	icon = 'icons/obj/items.dmi'
+	icon = 'icons/obj/gifts.dmi'
 	icon_state = "gift3"
 
 /obj/random/loot/spawn_choices()

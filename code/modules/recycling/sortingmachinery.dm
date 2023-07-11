@@ -159,7 +159,7 @@
 /obj/item/smallDelivery
 	desc = "A small wrapped package."
 	name = "small parcel"
-	icon = 'icons/obj/storage.dmi'
+	icon = 'icons/obj/parcels.dmi'
 	icon_state = "deliverycrate3"
 	health_max = 5
 	var/obj/item/wrapped = null
@@ -269,12 +269,12 @@
 /obj/item/smallDelivery/on_update_icon()
 	overlays.Cut()
 	if((nameset || examtext) && icon_state != "deliverycrate1")
-		var/image/I = new/image('icons/obj/storage.dmi',"delivery_label")
+		var/image/I = new/image('icons/obj/parcels.dmi',"delivery_label")
 		if(icon_state == "deliverycrate5")
 			I.pixel_y = -1
 		overlays += I
 	if(src.sortTag)
-		var/image/I = new/image('icons/obj/storage.dmi',"delivery_tag")
+		var/image/I = new/image('icons/obj/parcels.dmi',"delivery_tag")
 		switch(icon_state)
 			if("deliverycrate1")
 				I.pixel_y = -5

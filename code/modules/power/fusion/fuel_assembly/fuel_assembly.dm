@@ -1,6 +1,6 @@
 /obj/item/fuel_assembly
 	name = "fuel rod assembly"
-	icon = 'icons/obj/machines/power/fusion.dmi'
+	icon = 'icons/obj/fusion_fuel_assembly.dmi'
 	icon_state = "fuel_assembly"
 	layer = 4
 

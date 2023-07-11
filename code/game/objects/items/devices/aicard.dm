@@ -73,7 +73,7 @@
 	overlays.Cut()
 	if(carded_ai)
 		if (!carded_ai.control_disabled)
-			overlays += image('icons/obj/aicards.dmi', "aicard-on")
+			overlays += image('icons/obj/tools/aicards.dmi', "aicard-on")
 		if(carded_ai.stat)
 			icon_state = "aicard-404"
 		else

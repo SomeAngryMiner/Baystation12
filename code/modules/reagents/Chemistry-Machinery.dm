@@ -14,7 +14,7 @@
 	desc = "This large machine uses a complex filtration system to split, merge, condense, or bottle up any kind of chemical, for all your medicinal* needs."
 	density = TRUE
 	anchored = TRUE
-	icon = 'icons/obj/chemical.dmi'
+	icon = 'icons/obj/machines/medical/mixer.dmi'
 	icon_state = "mixer0"
 	layer = BELOW_OBJ_LAYER
 	idle_power_usage = 20
@@ -289,9 +289,9 @@
 		spawn()
 			has_sprites += user.client
 			for(var/i = 1 to MAX_PILL_SPRITE)
-				send_rsc(usr, icon('icons/obj/chemical.dmi', "pill" + num2text(i)), "pill[i].png")
+				send_rsc(usr, icon('icons/obj/pills.dmi', "pill" + num2text(i)), "pill[i].png")
 			for(var/sprite in BOTTLE_SPRITES)
-				send_rsc(usr, icon('icons/obj/chemical.dmi', sprite), "[sprite].png")
+				send_rsc(usr, icon('icons/obj/chemical_storage.dmi', sprite), "[sprite].png")
 
 	var/data = list()
 	if (analyzed_reagent)

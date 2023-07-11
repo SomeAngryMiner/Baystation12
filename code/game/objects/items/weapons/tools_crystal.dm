@@ -124,7 +124,7 @@
 /obj/item/storage/toolbox/crystal
 	name = "crystalline toolbox"
 	desc = "A translucent toolbox made out of an odd crystalline material that is surprisingly light."
-	icon = "icons/obj/tools/toolboxes.dmi"
+	icon = 'icons/obj/tools/toolboxes.dmi'
 	icon_state = "crystal"
 	item_state = "toolbox_crystal"
 	origin_tech = list(TECH_COMBAT = 1, TECH_MATERIAL = 3)

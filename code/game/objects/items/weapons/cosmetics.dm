@@ -78,7 +78,7 @@
 	desc = "A pristine comb made from flexible plastic."
 	w_class = ITEM_SIZE_TINY
 	slot_flags = SLOT_EARS
-	icon = 'icons/obj/items.dmi'
+	icon = 'icons/obj/lavatory.dmi'
 	icon_state = "comb"
 	item_state = "comb"
 

@@ -193,6 +193,6 @@
 	overlays.Cut()
 	if(container)
 		var/mutable_appearance/beaker_overlay
-		beaker_overlay = image('icons/obj/chemical.dmi', src, "lil_beaker")
+		beaker_overlay = image('icons/obj/machines/dispensers.dmi', src, "lil_beaker")
 		beaker_overlay.pixel_x = rand(-10, 5)
 		overlays += beaker_overlay

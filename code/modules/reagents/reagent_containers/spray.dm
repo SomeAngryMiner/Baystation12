@@ -156,7 +156,7 @@
 /obj/item/reagent_containers/spray/waterflower
 	name = "water flower"
 	desc = "A seemingly innocent sunflower...with a twist."
-	icon = 'icons/obj/sunflower.dmi'
+	icon = 'icons/obj/flora/sunflower.dmi'
 	icon_state = "sunflower"
 	item_state = "sunflower"
 	amount_per_transfer_from_this = 1
@@ -232,6 +232,6 @@
 	desc = "A can of Gold Standard spray deodorant - for when you're too lazy to shower."
 	gender = PLURAL
 	volume = 35
-	icon = 'icons/obj/items.dmi'
+	icon = 'icons/obj/lavatory.dmi'
 	icon_state = "deodorant"
 	item_state = "deodorant"

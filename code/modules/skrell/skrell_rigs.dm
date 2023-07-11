@@ -232,8 +232,8 @@
 	interface_name = "cable fabricator"
 	interface_desc = "A cable nanofabricator of Skrellian design."
 	device = /obj/item/stack/cable_coil/fabricator
-	icon = 'icons/obj/tools.dmi'
-	icon_state = "cablecoil"
+	icon = 'icons/obj/machines/power/power_cond_white.dmi'
+	icon_state = "coil"
 	usable = FALSE
 	selectable = TRUE
 
@@ -242,7 +242,7 @@
 	desc = "An electrical cutting torch of Skrellian design."
 	interface_name = "welding arm"
 	interface_desc = "An electrical cutting torch of Skrellian design."
-	icon = 'icons/obj/tools.dmi'
+	icon = 'icons/obj/tools/welder.dmi'
 	icon_state = "skrell_welder1"
 	engage_string = "Toggle Welder"
 	device = /obj/item/weldingtool/electric
@@ -296,7 +296,7 @@
 /obj/item/clustertool
 	name = "alien clustertool"
 	desc = "A bewilderingly complex knot of tool heads."
-	icon = 'icons/obj/tools.dmi'
+	icon = 'icons/obj/tools/swapper.dmi'
 	icon_state = "clustertool"
 	w_class = ITEM_SIZE_SMALL
 

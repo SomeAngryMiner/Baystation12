@@ -282,7 +282,7 @@
 
 /obj/item/robot_rack/bottle
 	name = "bottle rack"
-	icon = 'icons/obj/chemical.dmi'
+	icon = 'icons/obj/chemical_storage.dmi'
 	icon_state = "bottle-1"
 	object_type = /obj/item/reagent_containers/glass/bottle
 	capacity = 4

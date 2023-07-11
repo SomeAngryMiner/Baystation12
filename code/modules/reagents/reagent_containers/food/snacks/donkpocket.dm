@@ -267,7 +267,7 @@
 /obj/random/donkpocket_box
 	name = "random box of donk-pockets"
 	desc = "This is a random box of donk-pockets."
-	icon = 'icons/obj/storage.dmi'
+	icon = 'icons/obj/boxes.dmi'
 	icon_state = "donk_kit"
 
 

@@ -106,7 +106,7 @@
 /obj/structure/hygiene/toilet
 	name = "toilet"
 	desc = "The HT-451, a torque rotation-based, waste disposal unit for small matter. This one seems remarkably clean."
-	icon = 'icons/obj/watercloset.dmi'
+	icon = 'icons/obj/toilets.dmi'
 	icon_state = "toilet00"
 	density = FALSE
 	anchored = TRUE
@@ -245,7 +245,7 @@
 /obj/structure/hygiene/urinal
 	name = "urinal"
 	desc = "The HU-452, an experimental urinal."
-	icon = 'icons/obj/watercloset.dmi'
+	icon = 'icons/obj/toilets.dmi'
 	icon_state = "urinal"
 	density = FALSE
 	anchored = TRUE
@@ -425,7 +425,7 @@
 /obj/item/bikehorn/rubberducky
 	name = "rubber ducky"
 	desc = "Rubber ducky you're so fine, you make bathtime lots of fuuun. Rubber ducky I'm awfully fooooond of yooooouuuu~"	//thanks doohl
-	icon = 'icons/obj/watercloset.dmi'
+	icon = 'icons/obj/toy.dmi'
 	icon_state = "rubberducky"
 	item_state = "rubberducky"
 

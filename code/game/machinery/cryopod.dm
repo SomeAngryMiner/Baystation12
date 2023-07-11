@@ -126,7 +126,7 @@
 
 	name = "cryogenic feed"
 	desc = "A bewildering tangle of machinery and pipes."
-	icon = 'icons/obj/Cryogenic2.dmi'
+	icon = 'icons/obj/machines/medical/cryogenic_legacy.dmi'
 	icon_state = "cryo_rear"
 	anchored = TRUE
 	dir = WEST

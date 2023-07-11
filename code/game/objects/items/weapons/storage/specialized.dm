@@ -57,7 +57,7 @@
 
 /obj/item/storage/sheetsnatcher
 	name = "sheet snatcher"
-	icon = 'icons/obj/mining.dmi'
+	icon = 'icons/obj/mining_satchel.dmi'
 	icon_state = "sheetsnatcher"
 	desc = "A patented storage system designed for any kind of mineral sheet."
 	storage_ui = /datum/storage_ui/default/sheetsnatcher

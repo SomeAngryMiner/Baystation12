@@ -99,41 +99,41 @@
 /obj/structure/virology/dnaconsole
 	name = "console"
 	desc = "A console, you're not sure what the information displayed means."
-	icon = 'icons/obj/cryogenic2.dmi'
+	icon = 'icons/obj/machines/medical/cryogenic_legacy.dmi'
 	icon_state = "dna_computer"
 	anchored = TRUE
 
 /obj/structure/virology/console
 	name = "console"
 	desc = "A console, the information displayed is far beyond what you can understand."
-	icon = 'icons/obj/cryogenic2.dmi'
+	icon = 'icons/obj/machines/medical/cryogenic_legacy.dmi'
 	icon_state = "scannerconsole"
 	anchored = TRUE
 
 /obj/structure/virology/console_off
 	name = "console"
 	desc = "A console, it's not functioning."
-	icon = 'icons/obj/cryogenic2.dmi'
+	icon = 'icons/obj/machines/medical/cryogenic_legacy.dmi'
 	icon_state = "c_unpowered"
 	anchored = TRUE
 
 /obj/structure/virology/console_broken
 	name = "console"
 	desc = "A console, the glass is smashed."
-	icon = 'icons/obj/cryogenic2.dmi'
+	icon = 'icons/obj/machines/medical/cryogenic_legacy.dmi'
 	icon_state = "broken"
 	anchored = TRUE
 
 /obj/structure/virology/scanner
 	name = "scanner"
 	desc = "Some sort of scanner, you're not sure what it does."
-	icon = 'icons/obj/cryogenic2.dmi'
+	icon = 'icons/obj/machines/medical/cryogenic_legacy.dmi'
 	icon_state = "scanner_0"
 	anchored = TRUE
 
 /obj/structure/virology/scanner_on
 	name = "scanner"
 	desc = "Some sort of scanner, it appears there is someone inside as data streams off the console."
-	icon = 'icons/obj/cryogenic2.dmi'
+	icon = 'icons/obj/machines/medical/cryogenic_legacy.dmi'
 	icon_state = "scanner_1"
 	anchored = TRUE
