@@ -1,7 +1,7 @@
 /obj/machinery/recharge_station
 	name = "cyborg recharging station"
 	desc = "A heavy duty rapid charging system, designed to quickly recharge cyborg power reserves."
-	icon = 'icons/obj/objects.dmi'
+	icon = 'icons/obj/robot_charger.dmi'
 	icon_state = "borgcharger0"
 	density = TRUE
 	anchored = TRUE
@@ -14,7 +14,7 @@
 	machine_name = "cyborg recharging station"
 	machine_desc = "A station for recharging robots, cyborgs, and silicon-based humanoids such as IPCs and full-body prosthetics."
 
-	var/overlay_icon = 'icons/obj/objects.dmi'
+	var/overlay_icon = 'icons/obj/robot_charger.dmi'
 	var/mob/living/occupant = null
 	var/charging = 0
 	var/last_overlay_state
