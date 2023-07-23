@@ -1,7 +1,7 @@
 /obj/item/device/drone_designator
 	name = "drone telemetry designator"
 	desc = "A small, handheld tool used to transmit location data to a transport drone."
-	icon = 'icons/obj/machines/landing_pad.dmi'
+	icon = 'icons/obj/tools/drone_control.dmi'
 	icon_state = "pad_designator"
 	var/network = null
 	w_class = ITEM_SIZE_SMALL

@@ -323,7 +323,7 @@
 	icon_state = "coffee"
 	item_state = "coffee"
 	center_of_mass = "x=16;y=14"
-	filling_states = "100"
+	//filling_states = "100"
 	base_name = "cup"
 	base_icon = "cup"
 
@@ -357,7 +357,7 @@
 	icon_state = "coffee"
 	item_state = "coffee"
 	center_of_mass = "x=16;y=14"
-	filling_states = "100"
+	//filling_states = "100"
 	base_name = "cup"
 	base_icon = "cup"
 

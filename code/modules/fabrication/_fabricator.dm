@@ -106,8 +106,8 @@
 		overlays += emissive_appearance(icon, "[icon_state]_lights")
 		overlays += "[icon_state]_lights"
 	else if(currently_building)
-		overlays += emissive_appearance(icon, "[base_icon_state]_lights_working")
-		overlays += "[base_icon_state]_lights_working"
+		overlays += emissive_appearance(icon, "[icon_state]_lights_working")
+		overlays += "[icon_state]_lights_working"
 
 	var/list/new_overlays = material_overlays.Copy()
 	overlays += new_overlays

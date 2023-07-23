@@ -32,11 +32,13 @@ Note: Must be placed within 3 tiles of the R&D Console
 	overlays.Cut()
 	if(panel_open)
 		overlays += "[icon_state]_panel"
-	if(is_powered())
-		overlays += emissive_appearance(icon, "[icon_state]_lights")
-		overlays += "[icon_state]_lights"
 	if(loaded_item)
-		icon_state = "[icon_state]_item"
+		overlays += "[icon_state]_lights_item"
+	overlays += "[icon_state]_lights"
+	if(is_powered())
+		if(loaded_item)
+			overlays += emissive_appearance(icon, "[icon_state]_lights_item")
+		overlays += emissive_appearance(icon, "[icon_state]_lights")
 
 /obj/machinery/r_n_d/destructive_analyzer/state_transition(singleton/machine_construction/default/new_state)
 	. = ..()
@@ -83,7 +85,9 @@ Note: Must be placed within 3 tiles of the R&D Console
 		busy = 1
 		loaded_item = O
 		to_chat(user, SPAN_NOTICE("You add \the [O] to \the [src]."))
-		flick("[icon_state]_lights_entry", src)
+		overlays += "[icon_state]_lights_entry"
+		if(is_powered())
+			overlays += emissive_appearance(icon, "[icon_state]_lights-entry")
 		spawn(10)
 			update_icon()
 			busy = 0
