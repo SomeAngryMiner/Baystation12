@@ -22,13 +22,13 @@
 	heavy_effect_range = 0
 	light_effect_range = 0
 
-/obj/item/projectile/bullet/gyro
+/obj/item/projectile/bullet/explosive
 	name ="explosive bolt"
 	icon_state= "bolter"
 	damage = 50
 	damage_flags = DAMAGE_FLAG_BULLET | DAMAGE_FLAG_SHARP | DAMAGE_FLAG_EDGE
 
-/obj/item/projectile/bullet/gyro/on_hit(atom/target, blocked = 0)
+/obj/item/projectile/bullet/explosive/on_hit(atom/target, blocked = 0)
 	explosion(target, 2, EX_ACT_LIGHT)
 	return 1
 

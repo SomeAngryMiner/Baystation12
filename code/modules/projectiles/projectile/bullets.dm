@@ -225,13 +225,13 @@
 	penetration_modifier = 1.5
 
 /* Miscellaneous */
-/obj/item/projectile/bullet/gyro
-	name = "minirocket"
-	fire_sound = 'sound/effects/Explosion1.ogg'
-	var/explosion_radius = 2
-	var/explosion_max_power = EX_ACT_LIGHT
+/obj/item/projectile/bullet/explosive
+	name = "missile"
+	fire_sound = 'sound/weapons/gunshot/mech_autocannon.ogg'
+	var/explosion_radius = 5
+	var/explosion_max_power = EX_ACT_HEAVY
 
-/obj/item/projectile/bullet/gyro/on_hit(atom/target, blocked = 0)
+/obj/item/projectile/bullet/explosive/on_hit(atom/target, blocked = 0)
 	if(isturf(target))
 		explosion(target, explosion_radius, explosion_max_power)
 	..()

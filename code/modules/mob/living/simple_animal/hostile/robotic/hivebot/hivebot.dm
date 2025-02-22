@@ -122,7 +122,7 @@ Teleporter beacon, and its subtypes
 /*
 Special projectiles
 */
-/obj/item/projectile/bullet/gyro/megabot
+/obj/item/projectile/bullet/explosive/megabot
 	name = "microrocket"
 	explosion_radius = 1
 	distance_falloff = 1.3
@@ -233,7 +233,7 @@ The megabot
 			attack_mode = ATTACK_MODE_ROCKET
 			ranged = TRUE
 			projectilesound = 'sound/effects/Explosion1.ogg'
-			projectiletype = /obj/item/projectile/bullet/gyro/megabot
+			projectiletype = /obj/item/projectile/bullet/explosive/megabot
 			num_shots = 4
 			fire_desc = "launches a microrocket"
 			time_last_used_ability = special_attack_cooldown + world.time

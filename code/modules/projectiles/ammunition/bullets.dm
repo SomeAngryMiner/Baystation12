@@ -51,7 +51,7 @@
 /obj/item/ammo_casing/gyrojet
 	desc = "A minirocket casing."
 	caliber = CALIBER_GYROJET
-	projectile_type = /obj/item/projectile/bullet/gyro
+	projectile_type = /obj/item/projectile/bullet/explosive
 	icon_state = "lcasing"
 	spent_icon = "lcasing-spent"
 
@@ -179,12 +179,15 @@
 	projectile_type = /obj/item/projectile/bullet/rifle/military/practice
 	icon_state = "rifle_mil_p"
 
-/obj/item/ammo_casing/rocket
-	name = "rocket shell"
-	desc = "A high explosive designed to be fired from a launcher."
-	icon_state = "rocketshell"
-	projectile_type = /obj/item/missile
-	caliber = "rocket"
+/obj/item/ammo_casing/missile
+	name = "compact missile"
+	desc = "A Terraphistus Armour C-9 laser guided missile of human origin, designed to be fired from a handheld launcher. Handle with care!"
+	label = "84mm HE"
+	caliber = CALIBER_PORTABLE_MISSILE
+	icon_state = "missile"
+	projectile_type = /obj/item/projectile/bullet/explosive
+	matter = list(MATERIAL_STEEL = 5000, MATERIAL_GOLD = 250, MATERIAL_GLASS = 1200, MATERIAL_URANIUM = 100)
+	origin_tech = list(TECH_COMBAT = 8, TECH_MATERIAL = 4, TECH_MAGNET = 8, TECH_DATA = 8)
 
 /obj/item/ammo_casing/cap
 	name = "cap"
