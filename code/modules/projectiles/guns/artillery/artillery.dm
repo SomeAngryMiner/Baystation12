@@ -23,6 +23,7 @@
 	fire_sound = 'sound/weapons/gunshot/mech_autocannon.ogg'
 	fire_delay = 20 // I would be surprised if you fire this faster than you can load it, but just in case
 	var/open_loader = 0 //Checks if the launcher is open
+	var/backblast = TRUE //Does this gun expel a plume of hot gas behind the user after its fired?
 
 /obj/item/gun/projectile/artillery/on_update_icon()
 	..()
@@ -79,3 +80,10 @@
 	if(!open_loader)
 		return
 	..()
+
+/obj/item/gun/projectile/artillery/handle_post_fire()
+	..()
+	if (backblast)
+		var/datum/effect/smoke_spread/smoke = new
+		smoke.set_up(5, 0, get_step(src.loc, reverse_direction(src.dir)))
+		smoke.start()
