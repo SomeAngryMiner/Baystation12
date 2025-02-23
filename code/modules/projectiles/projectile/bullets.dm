@@ -226,7 +226,7 @@
 
 /* Miscellaneous */
 /obj/item/projectile/bullet/explosive
-	name = "missile"
+	name = "explosive shell"
 	fire_sound = 'sound/weapons/gunshot/mech_autocannon.ogg'
 	var/explosion_radius = 5
 	var/explosion_max_power = EX_ACT_HEAVY

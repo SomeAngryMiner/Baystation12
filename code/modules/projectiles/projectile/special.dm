@@ -32,6 +32,15 @@
 	explosion(target, 2, EX_ACT_LIGHT)
 	return 1
 
+/obj/item/projectile/bullet/explosive/heavy
+	name ="explosive shell"
+	icon_state= "explosive-shell"
+	damage = 40 // this is for directly taking the shell to the face: explosion will handle the rest
+
+/obj/item/projectile/bullet/explosive/missile/on_hit(atom/target, blocked = 0)
+	target.ex_act(target.loc, 7, EX_ACT_HEAVY)
+	return 1
+
 /obj/item/projectile/meteor
 	name = "meteor"
 	icon = 'icons/obj/meteor.dmi'

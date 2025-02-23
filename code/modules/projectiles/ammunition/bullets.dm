@@ -179,13 +179,16 @@
 	projectile_type = /obj/item/projectile/bullet/rifle/military/practice
 	icon_state = "rifle_mil_p"
 
-/obj/item/ammo_casing/missile
-	name = "compact missile"
-	desc = "A Terraphistus Armour C-9 laser guided missile of human origin, designed to be fired from a handheld launcher. Handle with care!"
-	label = "84mm HE"
-	caliber = CALIBER_PORTABLE_MISSILE
-	icon_state = "missile"
-	projectile_type = /obj/item/projectile/bullet/explosive
+/obj/item/ammo_casing/artillery/explosive
+	name = "explosive round"
+	desc = "This is an HE 221 round for the M207 METES. It fills the role of a low-cost high-explosive round for soft targets. The primary use case is in low-intensity anti-insurgency operations, or when opposing forces lack significant defensive capabilities."
+	label = "90mm HE"
+	w_class = ITEM_SIZE_LARGE
+	caliber = CALIBER_HEAVY_SHELL
+	icon_state = "explosive-shell"
+	item_state = "explosive-shell"
+	spent_icon = "explosive-shell-spent"
+	projectile_type = /obj/item/projectile/bullet/explosive/heavy
 	matter = list(MATERIAL_STEEL = 5000, MATERIAL_GOLD = 250, MATERIAL_GLASS = 1200, MATERIAL_URANIUM = 100)
 	origin_tech = list(TECH_COMBAT = 8, TECH_MATERIAL = 4, TECH_MAGNET = 8, TECH_DATA = 8)
 

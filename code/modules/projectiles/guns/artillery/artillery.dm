@@ -1,22 +1,24 @@
 /obj/item/gun/projectile/artillery
-	name = "parent artillery weapon"
-	desc = "you shouldn't be seeing this, MAGGOT."
-	icon = 'icons/obj/guns/missile.dmi'
-	icon_state = "missile_launcher"
-	item_state = "missile_launcher"
+	name = "laser-guided recoilless launcher"
+	desc = "This is a Terraphistus Armor RCL-12 CDIA heavy recoilless launcher, accepted into SCG service as the M207 METES. Designed for a two-man gunner team, this weapon is heavy, cumbersome, and lethal to untrained operators."
+	icon = 'icons/obj/guns/recoilless_launcher.dmi'
+	icon_state = "recoilless_launcher"
+	item_state = "recoilless_launcher"
+	wielded_item_state = "recoilless_launcher-wielded"
+	safety_icon = "recoilless-safety"
 	force = 20 // This is, understandably, huge
+	bulk = GUN_BULK_RIFLE + 3
 	w_class = ITEM_SIZE_HUGE
 	slot_flags = SLOT_BACK
-	handle_casings = CLEAR_CASINGS
+	handle_casings = HOLD_CASINGS
 	load_method = SINGLE_CASING
 	max_shells = 1
-	caliber = CALIBER_PORTABLE_MISSILE
+	caliber = CALIBER_HEAVY_SHELL
 	screen_shake = 2 //
 	origin_tech = list(TECH_COMBAT = 8, TECH_MATERIAL = 5)
-	ammo_type = /obj/item/ammo_casing/missile
+	ammo_type = /obj/item/ammo_casing/artillery/explosive
 	one_hand_penalty = 8 // Firing a rocket launcher with one hand is ill-advised
 	bulk = 8
-	wielded_item_state = "missile_launcher-wielded"
 	var/toggle_loader_sound = 'sound/weapons/guns/interaction/rpgoneuse_deploying.wav' //what sound does it do while opening?
 	var/finish_loader_sound = 'sound/items/breaker_flip.ogg' //what sound does it make when it correctly finishes opening?
 	load_sound = 'sound/weapons/guns/interaction/rifle_load.ogg'
