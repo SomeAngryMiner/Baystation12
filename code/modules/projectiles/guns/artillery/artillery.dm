@@ -36,7 +36,7 @@
 
 /obj/item/gun/projectile/artillery/attack_self(mob/user as mob)
 	open_loader = !open_loader
-	if (open_loader)
+	if (open_loader) //loader's closed: let's open it!
 		user.visible_message(
 			SPAN_ITALIC("\The [user] starts opening up \the [src]..."),
 			SPAN_ITALIC("You start opening up \a [src]..."),
@@ -46,7 +46,7 @@
 		if (!do_after(user, 3 SECONDS, src, DO_PUBLIC_UNIQUE))
 			return FALSE
 		playsound(src, finish_loader_sound, 50, 1)
-	else
+	else //loader's open: let's close it!
 		user.visible_message(
 			SPAN_ITALIC("\The [user] starts closing up \the [src]..."),
 			SPAN_ITALIC("You start closing up \a [src]..."),
@@ -65,25 +65,50 @@
 	update_icon()
 	return TRUE
 
-/obj/item/gun/projectile/artillery/special_check(mob/user)
+/obj/item/gun/projectile/artillery/special_check(mob/user) //did you forget to close the loading hatch?
 	if(open_loader)
 		to_chat(user, SPAN_WARNING("You can't fire \the [src] while the loading port is open!"))
 		return 0
 	return ..()
 
-/obj/item/gun/projectile/artillery/load_ammo(obj/item/A, mob/user)
+/obj/item/gun/projectile/artillery/load_ammo(mob/user) //don't load ammo if the loader is closed
 	if(!open_loader)
+		to_chat(user, SPAN_WARNING("You can't load \the [src] while the loading port is closed."))
 		return
 	..()
 
-/obj/item/gun/projectile/artillery/unload_ammo(mob/user, allow_dump=1)
+/obj/item/gun/projectile/artillery/unload_ammo(mob/user, allow_dump=1) //don't unload ammo if the loader is closed either
 	if(!open_loader)
+		to_chat(user, SPAN_WARNING("You can't unload \the [src] while the loading port is closed."))
 		return
 	..()
 
-/obj/item/gun/projectile/artillery/handle_post_fire()
+/obj/item/gun/projectile/artillery/handle_post_fire(mob/user)
 	..()
-	if (backblast)
-		var/datum/effect/smoke_spread/smoke = new
-		smoke.set_up(5, 0, get_step(src.loc, reverse_direction(src.dir)))
-		smoke.start()
+	if (backblast) //does this weapon have a considerable backblast?
+		var/backblast_location = get_turf(get_step(user.loc, reverse_direction(user.dir))) //select the zone behind the shooter...
+		var/datum/effect/smoke_spread/bad/smoke = new
+		smoke.set_up(2, 0, backblast_location, turn(user.dir, 180)) //create smoke, make it go in the opposite direction of shooter's facing direction
+		smoke.start() //create that smoke!
+		for(var/mob/living/victim in backblast_location) //is anyone foolish enough to stand behind the shooter?
+
+			victim.apply_damage(40, DAMAGE_BRUTE, used_weapon = "Overpressure concentration", armor_pen=25) // This damage is hardly avoidable, even with armor
+
+			victim.apply_damage(60, DAMAGE_BURN, used_weapon = "Thermal blast") // this one, however, you can mitigate with proper equipment. Still shouldn't stand there though.
+
+			victim.flash_eyes() //First sign you're cooked
+
+			victim.visible_message(
+				SPAN_DANGER("\The [victim] gets washed over by a plume of smoke and sparks!"),
+				SPAN_DANGER("In a fraction of a second, you feel yourself washed over by a scorching heat, and violently thrown back!"),
+				SPAN_DANGER("You hear sickening sizzling, and a loud bang.")
+			)
+
+			victim.throw_at(get_edge_target_turf(victim, get_dir(src, victim)), rand(1,3), 4) // Throw them away - even in power armor, you're not immune to physics.
+
+			victim.Stun(rand(3,5)) // You're getting hit by an overpressurized blast of super hot, high pressure gas - This knocks out people, naturally
+
+			victim.ear_damage += rand(0, 5) // Your ears did not like that - deafen them. Akin to a close flashbang
+			victim.ear_deaf = max(victim.ear_deaf,15)
+
+			victim.apply_effect(8, EFFECT_EYE_BLUR) //mild after effects, but you're still alive, that's lucky enough
